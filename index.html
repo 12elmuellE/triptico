@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tríptico informativo sobre alimentación saludable y sostenibilidad, ideal para estudiantes de secundaria.">
+    <meta name="keywords" content="alimentación saludable, sostenibilidad, dietas equilibradas, hábitos saludables, Córdoba">
+    <meta name="author" content="Colegio Córdoba">
+    <title>Tríptico: Alimentación Saludable</title>
+    <style>
+        :root {
+            --primary-color: #2a9d8f;
+            --secondary-color: #264653;
+            --accent-color: #e76f51;
+            --background-color: #f4f4f9;
+            --text-color: #333;
+            --highlight-bg: #e9f5f3;
+            --highlight-border: #2a9d8f;
+            --font-family: 'Arial', sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-family);
+            line-height: 1.6;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            margin: 0;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1px;
+            max-width: 1200px;
+            margin: 40px auto;
+            background-color: var(--secondary-color);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .section {
+            background-color: #fff;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        h2 {
+            color: var(--primary-color);
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            text-align: center;
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 5px;
+        }
+
+        p, ul {
+            font-size: 1rem;
+            margin-bottom: 15px;
+        }
+
+        ul {
+            list-style: disc;
+            padding-left: 20px;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        .image {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .image img:hover {
+            transform: scale(1.05);
+        }
+
+        .highlight {
+            background-color: var(--highlight-bg);
+            border-left: 4px solid var(--highlight-border);
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 15px;
+            background: var(--primary-color);
+            color: #fff;
+            font-size: 0.9rem;
+        }
+
+        .footer a {
+            color: #fff;
+            text-decoration: underline;
+            transition: color 0.3s ease;
+        }
+
+        .footer a:hover {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <!-- Portada -->
+        <div class="section">
+            <h2>¡Vive Saludable y Sostenible!</h2>
+            <div class="image">
+                <img src="https://www.solucionesparaladiabetes.com/magazine-diabetes/wp-content/uploads/fruta_verdura_-z-696x416.jpg" alt="Frutas y verduras frescas">
+            </div>
+            <p><strong>Cuidar tu alimentación es cuidar de ti y del planeta.</strong></p>
+            <p>Descubre consejos prácticos, mitos desmontados y hábitos saludables para transformar tu vida.</p>
+        </div>
+
+        <!-- Información nutricional y desmontando mitos -->
+        <div class="section">
+            <h2>Alimentación Saludable</h2>
+            <div class="highlight">
+                <p><strong>¿Qué es una dieta equilibrada?</strong></p>
+                <ul>
+                    <li>50% frutas y verduras frescas.</li>
+                    <li>25% carbohidratos integrales (arroz, pan, pasta).</li>
+                    <li>25% proteínas saludables (legumbres, pescado, huevos).</li>
+                </ul>
+            </div>
+            <p><strong>Mitos y realidades:</strong></p>
+            <ul>
+                <li><strong>Mito:</strong> Comer de noche engorda.<br><strong>Realidad:</strong> Lo importante es el balance de calorías diario.</li>
+                <li><strong>Mito:</strong> El pan engorda.<br><strong>Realidad:</strong> El pan integral es una fuente saludable de energía.</li>
+                <li><strong>Mito:</strong> Saltarse comidas ayuda a adelgazar.<br><strong>Realidad:</strong> Saltarse comidas puede ralentizar tu metabolismo.</li>
+            </ul>
+        </div>
+
+        <!-- Hábitos y sostenibilidad -->
+        <div class="section">
+            <h2>Hábitos y Sostenibilidad</h2>
+            <div class="highlight">
+                <p><strong>Hábitos saludables:</strong></p>
+                <ul>
+                    <li>Planifica tus comidas para evitar desperdicios.</li>
+                    <li>Realiza actividad física regularmente (al menos 30 minutos al día).</li>
+                    <li>Bebe suficiente agua: 6-8 vasos diarios.</li>
+                    <li>Desconéctate de las pantallas al comer y disfruta tus alimentos.</li>
+                </ul>
+            </div>
+            <p><strong>Consejos sostenibles:</strong></p>
+            <ul>
+                <li>Compra productos locales y de temporada para reducir la huella de carbono.</li>
+                <li>Usa bolsas reutilizables y evita plásticos de un solo uso.</li>
+                <li>Reutiliza y congela alimentos para reducir el desperdicio.</li>
+                <li>Visita mercados locales como el Mercado Victoria en Córdoba.</li>
+            </ul>
+        </div>
+
+    </div>
